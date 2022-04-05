@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Data Security - Responsive Bootstrap Admin Panel Templates</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- site icon -->
+      <link rel="icon" href=" {% static 'images/fevicon.png' %} " type="image/png" />
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href=" {% static 'dash/css/bootstrap.min.css' %} " />
+      <!-- site css -->
+      <link rel="stylesheet" href=" {% static 'dash/style.css' %} " />
+      <!-- responsive css -->
+      <link rel="stylesheet" href=" {% static 'dash/css/responsive.css' %} " />
+      <!-- color css -->
+      <link rel="stylesheet" href=" {% static 'dash/css/colors.css' %} " />
+      <!-- select bootstrap -->
+      <link rel="stylesheet" href=" {% static 'dash/css/bootstrap-select.css' %} " />
+      <!-- scrollbar css -->
+      <link rel="stylesheet" href=" {% static 'dash/css/perfect-scrollbar.css' %} " />
+      <!-- custom css -->
+      <link rel="stylesheet" href=" {% static 'dash/css/custom.css' %} " />
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body class="dashboard dashboard_1">
+      <div class="full_container">
+         <div class="inner_container">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+               <div class="sidebar_blog_1">
+                  <div class="sidebar-header">
+                     <div class="logo_section">
+                        <a href=" {% static 'index.html' %} "><img class="logo_icon img-responsive" src=" {% static 'images/logo/logo_icon.png' %} " alt="#" /></a>
+                     </div>
+                  </div>
+                  <div class="sidebar_user_info">
+                     <div class="icon_setting"></div>
+                     <div class="user_profle_side">
+                        <div class="user_img"><img class="img-responsive" src="#" alt="#" /></div>
+                        <div class="user_info">
+                           <h6>DATA SECURE</h6>
+                           <p><span class="online_animation"></span> Online</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="sidebar_blog_2">
+                  <h4>General</h4>
+                  <ul class="list-unstyled components">
+                     <li class="active">
+                        <a href=" {% static '#dashboard' %} " data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
+                        <ul class="collapse list-unstyled" id="dashboard">
+                           <li>
+                              <a href=" {% static 'dash/dashboard.html' %} ">> <span>Default Dashboard</span></a>
+                           </li>
+                           <li>
+                              <a href=" {% static 'dash/dashboard_2.html' %} ">> <span>Dashboard style 2</span></a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li><a href=" {% url 'doc_views' %} "><i class="fa fa-clock-o orange_color"></i> <span>Manage data</span></a></li>
+                     <li>
+<!--                        <a href=" {% static '#element' %} " data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-diamond purple_color"></i> <span>Elements</span></a>-->
+                        <ul class="collapse list-unstyled" id="element">
+                           <li><a href=" {% static 'dash/general_elements.html' %} ">> <span>General Elements</span></a></li>
+                           <li><a href=" {% static 'dash/media_gallery.html' %} ">> <span>Media Gallery</span></a></li>
+                           <li><a href=" {% static 'dash/icons.html' %} ">> <span>Icons</span></a></li>
+                           <li><a href=" {% static 'dash/invoice.html' %} ">> <span>Invoice</span></a></li>
+                        </ul>
+                     </li>
+<!--                     <li><a href=" {% static 'tables.html' %} "><i class="fa fa-table purple_color2"></i> <span>Tables</span></a></li>-->
+                     <li>
+<!--                        <a href=" {% static '#apps' %} " data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-object-group blue2_color"></i> <span>Apps</span></a>-->
+                        <ul class="collapse list-unstyled" id="apps">
+                           <li><a href=" {% static 'dash/email.html' %} ">> <span>Email</span></a></li>
+                           <li><a href=" {% static 'dash/calendar.html' %} ">> <span>Calendar</span></a></li>
+                           <li><a href=" {% static 'dash/media_gallery.html' %} ">> <span>Media Gallery</span></a></li>
+                        </ul>
+                     </li>
+                     <li><a href=" {% static 'dash/price.html' %} "><i class="fa fa-briefcase blue1_color"></i> <span>Requests</span></a></li>
+                     <li>
+                        <a href=" {% static 'dash/contact.html' %} ">
+                        <i class="fa fa-paper-plane red_color"></i> <span>Users</span></a>
+                     </li>
+                     <li class="active">
+<!--                        <a href=" {% static 'dash/#additional_page' %} " data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-clone yellow_color"></i> <span>Additional Pages</span></a>-->
+                        <ul class="collapse list-unstyled" id="additional_page">
+                           <li>
+                              <a href=" {% static 'dash/profile.html' %} ">> <span>Profile</span></a>
+                           </li>
+                           <li>
+                              <a href=" {% static 'dash/project.html' %} ">> <span>Projects</span></a>
+                           </li>
+                           <li>
+                              <a href=" {% static 'dash/login.html' %} ">> <span>Login</span></a>
+                           </li>
+                           <li>
+                              <a href=" {% static 'dash/404_error.html' %} ">> <span>404 Error</span></a>
+                           </li>
+                        </ul>
+                     </li>
+<!--                     <li><a href=" {% static 'map.html' %} "><i class="fa fa-map purple_color2"></i> <span>Map</span></a></li>-->
+<!--                     <li><a href=" {% static 'charts.html' %} "><i class="fa fa-bar-chart-o green_color"></i> <span>Charts</span></a></li>-->
+<!--                     <li><a href=" {% static 'settings.html' %} "><i class="fa fa-cog yellow_color"></i> <span>Settings</span></a></li>-->
+                  </ul>
+               </div>
+            </nav>
+            <!-- end sidebar -->
+            <!-- right content -->
+            <div id="content">
+               <!-- topbar -->
+
+                 {% block content %}
+
+                    {% endblock %}
+
+               <div class="topbar">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                     <div class="full">
+                        <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i class="fa fa-bars"></i></button>
+                        <div class="logo_section">
+                           <a href=" {% static 'dash/index.html' %} "><img class="img-responsive" src=" {% static 'dash/images/logo/logo.png' %} " alt="#" /></a>
+                        </div>
+                        <div class="right_topbar">
+                           <div class="icon_info">
+                              <ul>
+                                 <li><a href="#"><i class="fa fa-bell-o"></i><span class="badge">2</span></a></li>
+                                 <li><a href="#"><i class="fa fa-question-circle"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-envelope-o"></i><span class="badge">3</span></a></li>
+                              </ul>
+                              <ul class="user_profile_dd">
+                                 <li>
+                                    <a class="dropdown-toggle" data-toggle="dropdown"><img class="img-responsive rounded-circle"  alt="#" /><span class="name_user">LOG OUT</span></a>
+                                    <div class="dropdown-menu">
+<!--                                       <a class="dropdown-item" href=" {% static 'dash/profile.html' %} ">My Profile</a>-->
+<!--                                       <a class="dropdown-item" href=" {% static 'dash/settings.html' %} ">Settings</a>-->
+<!--                                       <a class="dropdown-item" href=" {% static 'dash/help.html' %} ">Help</a>-->
+                                       <a class="dropdown-item" href="logout_view"><span>Log Out</span> <i class="fa fa-sign-out"></i></a>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </nav>
+               </div>
+
+               <!-- end dashboard inner -->
+            </div>
+         </div>
+      </div>
+      <!-- jQuery -->
+      <script src=" {% static 'dash/js/jquery.min.js' %} "></script>
+      <script src=" {% static 'dash/js/popper.min.js' %} "></script>
+      <script src=" {% static 'dash/js/bootstrap.min.js' %} "></script>
+      <!-- wow animation -->
+      <script src=" {% static 'dash/js/animate.js' %} "></script>
+      <!-- select country -->
+      <script src=" {% static 'dash/js/bootstrap-select.js' %} "></script>
+      <!-- owl carousel -->
+      <script src=" {% static 'dash/js/owl.carousel.js' %} "></script>
+      <!-- chart js -->
+      <script src=" {% static 'dash/js/Chart.min.js' %} "></script>
+      <script src=" {% static 'dash/js/Chart.bundle.min.js' %} "></script>
+      <script src=" {% static 'dash/js/utils.js' %} "></script>
+      <script src=" {% static 'dash/js/analyser.js' %} "></script>
+      <!-- nice scrollbar -->
+      <script src=" {% static 'dash/js/perfect-scrollbar.min.js' %} "></script>
+      <script>
+         var ps = new PerfectScrollbar('#sidebar');
+      </script>
+      <!-- custom js -->
+      <script src=" {% static 'dash/js/chart_custom_style1.js' %} "></script>
+      <script src=" {% static 'dash/js/custom.js' %} "></script>
+   </body>
+</html>
